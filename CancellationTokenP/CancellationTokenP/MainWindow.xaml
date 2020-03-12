@@ -7,15 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button x:Name="Btn_Start" Content="start1" HorizontalAlignment="Left" Margin="75,202,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="btn_Start2" Content="start2" HorizontalAlignment="Left" Margin="222,202,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Btn_start3" Content="start3" HorizontalAlignment="Left" Margin="376,202,0,0" VerticalAlignment="Top" Width="75"/>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF0872DC" Offset="0"/>
+                <GradientStop Color="Red" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="Btn_Start" Content="start1" HorizontalAlignment="Left" Margin="75,202,0,0" VerticalAlignment="Top" Width="75" Click="Btn_Start_Click"/>
+        <Button x:Name="btn_Start2" Content="start2" HorizontalAlignment="Left" Margin="222,202,0,0" VerticalAlignment="Top" Width="75" Click="btn_Start2_Click"/>
+        <Button x:Name="Btn_start3" Content="start3" HorizontalAlignment="Left" Margin="376,202,0,0" VerticalAlignment="Top" Width="75" Click="Btn_start3_Click"/>
         <Label x:Name="Lbl_op1" Content="" HorizontalAlignment="Left" Margin="75,128,0,0" VerticalAlignment="Top" Width="75"/>
         <Label x:Name="Lbl_op2" Content="" HorizontalAlignment="Left" Margin="222,128,0,0" VerticalAlignment="Top" Width="75"/>
         <Label x:Name="Lbl_op3" Content="" HorizontalAlignment="Left" Margin="376,128,0,0" VerticalAlignment="Top" Width="75"/>
-        <TextBox x:Name="txt_ritardo_op3" HorizontalAlignment="Left" Height="23" Margin="376,100,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="75"/>
-        <TextBox x:Name="txt_count1" HorizontalAlignment="Left" Height="23" Margin="222,56,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="75"/>
-        <TextBox x:Name="txt_count_op3" HorizontalAlignment="Left" Height="23" Margin="376,56,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="txt_ritardo_op3" HorizontalAlignment="Left" Height="23" Margin="376,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="txt_count1" HorizontalAlignment="Left" Height="23" Margin="222,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="txt_count_op3" HorizontalAlignment="Left" Height="23" Margin="376,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Btn_stop1" Content="stop1" HorizontalAlignment="Left" Margin="75,267,0,0" VerticalAlignment="Top" Width="75" Click="Btn_stop1_Click"/>
+        <Button x:Name="Btn_stop_ultimidue" Content="stop ultimi due" HorizontalAlignment="Left" Margin="210,267,0,0" VerticalAlignment="Top" Width="100" Click="Btn_stop_ultimidue_Click"/>
+        <Button x:Name="Btn_stop_tutti" Content="stop tutti" HorizontalAlignment="Left" Margin="376,267,0,0" VerticalAlignment="Top" Width="75" Click="Btn_stop_tutti_Click"/>
 
     </Grid>
 </Window>
